@@ -31,12 +31,10 @@
         <% if (!calculosBean.puedeCalcular()) { %>
             <p style="color:red">Los operandos deben ser valores mayores a 0.</p>
         <% } else { %>
-            <p>Operador 1: <%=calculosBean.getN1()%></p>
-            <p>Operador 2: <%=calculosBean.getN2()%></p>
             <p>Suma: <%=calculosBean.getResultado()%></p>
-            <p>Resta: <%=calculosBean.getResultado()%></p>
-            <p>Multiplicación: <%=calculosBean.getResultado()%></p>
-            <p>División: <%=calculosBean.getResultado()%></p>
+            <p>Resta: <%=calculosBean.getResta()%></p>
+            <p>Multiplicación: <%=calculosBean.getMultiplicacion()%></p>
+            <p>División: <%=calculosBean.getDivision()%></p>
         <% } %>
         
     </body>
